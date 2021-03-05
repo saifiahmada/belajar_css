@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* rgb perpaduan warna antara red , green dan blue, antara 0 - 255 */
+        h1 {
+            color: rgb(0, 255, 0);
+        }
+        /* rgba perpaduan warna rgb dengan alpha, antara 0.1 - 1.0 , 0.1 fully transparent  */
+
+        h2 {
+            color: rgba(0, 0, 0, 0.1);
+        }
+
+        /* HEX = hexadecimal */
+        /* #rrggbb */
+        /* HEX 3 angka #fc0 = #ffcc00 */
+
+        .hex-color {
+            color: #ffcc00;
+        }
+
+        .hex-color-3 {
+            color: #fc0;
+        }
+
+        /* HSL = Hue Saturation Lightness */
+        /* Hue -> 0 - 360 | 0 is red , 120 is green, 240 is blue */
+        /* Saturation is % value , 0% gray, 100% full color */
+        /* Lightness is $ value, 0% is black , 50% is neither light or dark, 100% is white */
+
+        /* HSLA = HSL + alpha */
+
+        .hsl-color {
+            color: hsl(120, 50%, 50%);
+        }
+
+        .hsla-color {
+            color: hsla(120, 50%, 50% , 0.5);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Warna RGB</h1>
+    <h2>Warna RGBA</h2>
+    <div class="hex-color">Testing warna HEX #ffcc00</div>
+    <div class="hex-color-3">Testing warna HEX #fc0</div>
+    <div class="hsl-color">Testing warna HSL hsl(120,50%,50%)</div>
+    <div class="hsla-color">Testing warna HSLA hsla(120,50%,50%, 0.5)</div>
+</body>
+</html>
