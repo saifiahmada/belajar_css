@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+    <style>
+        /* opsi border-style :  */
+
+        /* urutan border-width : top right bottom left */
+        div.border1 {
+            border-width: 2px;
+            border-style: dotted;
+        }
+
+        p.border2 {
+            border-width: 1px;
+            border-style: double;
+        }
+
+        p.border3 {
+            border-width: 1px;
+            border-style: groove;
+        }
+
+        p.border4 {
+            border-width: 8px ; 
+            border-style: solid;
+        }
+
+        p.border5 {
+            border-width: 8px ; 
+            border-style: solid;
+            border-color: yellow;
+        }
+
+        p.border6 {
+            border-width: 2px;
+            border-top-style: solid;
+            border-bottom-style: solid;
+            border-left-style: dotted;
+            border-right-style: dotted;
+        }
+
+        /* border shorthand urutan : border-width , border-style border color */
+        p.border7 {
+            border: 5px solid green;
+        }
+
+        /* border-radius */
+        p.border8 {
+            border : 2px solid red;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="border1">Element p dengan border-width: 2px ; border-style: dotted</div>
+
+    <p class="border2">Element p dengan border-width: 1px ; border-style: double</p>
+
+    <p class="border3">Element p dengan border-width: 1px ; border-style: groove</p>
+
+    <p class="border4">border-width: 8px ; 
+        border-style: solid;</p>
+
+    <p class="border5">Element p dengan border-width: 8px ; 
+        border-style: solid;
+        border-color: yellow;</p>
+
+    <p class="border6">Element p dengan border-width: 2px;
+        border-top-style: solid;
+        border-bottom-style: solid;
+        border-left-style: dotted;
+        border-right-style: dotted;</p>
+
+    <p class="border7">Element p dengan border shorthand border: 5px solid green;</p>
+
+    <p class="border8">Element p dengan border : 2px solid red; border-radius: 10px;</p>
+</body>
+</html>
