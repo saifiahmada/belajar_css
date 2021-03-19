@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Margin Collapse</title>
+    <Style>
+        .p1 {
+            border: 1px solid red;
+            margin : 50px 100px 100px 100px;
+        }
+
+        .p2 {
+            border: 1px solid red;
+            margin : 100px 100px 0 100px;
+        }
+
+        .p3 {
+            border: 1px solid red;
+            margin : 100px 100px 100px 100px;
+        }
+    </Style>
+</head>
+<body>
+    <p style="margin: 50px 100px 100px 100px">
+        Element div pertama mempunyai margin-bottom : 100px, div kedua mempunyai margin-top : 100px, seharusnya kedua div mempunya jarak 100px + 100px = 200px, tetapi jaraknya cuma 100px, ini bisa kita bandingkan dengan jarak antara div kedua dan div ketiga, yaitu div kedua mempunyai margin-bottom = 0 sedangkan div ketika mempunyai margin-top 100px, artinya jarak antara div kedua dan ketiga adalah 100px.
+    </p>
+    <div class="p1">Elemen div pertama dengan border 1px solid red dan margin-top: 50px, margin-right: 100px, margin-bottom:100px, margin-left: 100px</div>
+    <div class="p2">Elemen div kedua dengan border 1px solid red dan margin-top: 100px, margin-right: 100px, margin-bottom: 0, margin-left: 100px</div>
+    <div class="p3">Elemen div ketiga dengan border 1px solid red dan margin-top: 100px, margin-right: 100px, margin-bottom: 100px, margin-left: 100px</div>
+
+    <p style="margin : 0 100px 0 100px;">Margin-Collapse hanya berlaku jika dua element menggunakan margin-bottom dan margin-top, maka jarak yang berlaku antara kedua element tersebut adalah margin yang paling besar, bukan penjumlahan antara kedua margin tersebut, margin collapse/menyusut hanya berlaku untuk margin top dan bottom saja, tidak berlaku untuk margin left dan margin right</p>
+</body>
+</html>
